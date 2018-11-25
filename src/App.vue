@@ -26,13 +26,16 @@ export default {
 
 
 <style>
+a {
+  color: #666;
+}
+
 #app {
   width: 420px;
   margin: 0 0 0 auto;
 
   font-family: 'Source Code Pro', monospace;
   color: #666;
-  /* text-align: justify; */
 }
 
 @media only screen and (max-width: 540px) {
