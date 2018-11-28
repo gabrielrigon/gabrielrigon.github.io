@@ -12,7 +12,7 @@
       <br>
       <br>Currently working as
       <strong>Software Engineer and Technical Leader</strong> at
-      <strong>Kazap Tecnologia</strong>. I love code, technology, pizza and
+      <strong>Kazap Tecnologia</strong>. I love to code, technology, pizza and
       <a
         href="https://www.youtube.com/watch?v=TRqiFPpw2fY"
         target="_blank"
@@ -25,8 +25,8 @@
 
 <script>
 export default {
-  name: 'AboutMe'
-}
+  name: "AboutMe"
+};
 </script>
 
 <style scoped>
