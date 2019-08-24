@@ -3,16 +3,12 @@
     <h1>Gabriel Rigon</h1>
     <h2>About me</h2>
     <p>
-      <strong>"I'm <a
-        href="http://batman.com"
-        target="_blank"
-        tabindex="-1"
-        class="normal-text"
-      >Batman</a>!"</strong> hahaha, I'm kidding... or not!?
-      <br>
-      <br>Currently working as
-      <strong>Software Engineer and Technical Leader</strong> at
-      <strong>Kazap Tecnologia</strong>. I love to code, technology, pizza and
+      <strong>
+        "I'm
+        <a href="http://batman.com" target="_blank" tabindex="-1" class="normal-text">Batman</a>!"
+      </strong> hahaha, I'm kidding... or not!?
+      <br />
+      <br />I love to code, technology, pizza and
       <a
         href="https://www.youtube.com/watch?v=TRqiFPpw2fY"
         target="_blank"
