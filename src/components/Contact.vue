@@ -1,8 +1,11 @@
 <template>
   <div class="contact">
     <h2>Contact</h2>
-    <p>For now, I only have an email to contact me, but in a few years I will buy a mobile phone, I promise.
-      <a href="mailto:gabrielrigon@outlook.com">gabrielrigon@outlook.com</a>
+    <p>
+      For now, I only have an email to contact me, but in a few years I will buy a mobile phone, I promise.
+      <a
+        href="mailto:devrigon@icloud.com"
+      >devrigon@icloud.com</a>
     </p>
   </div>
 </template>
