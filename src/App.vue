@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <AboutMe/>
-    <Skills/>
-    <Interests/>
-    <Contact/>
+    <AboutMe />
+    <Skills />
+    <Interests />
+    <Contact />
   </div>
 </template>
 
@@ -34,7 +34,7 @@ a {
   width: 420px;
   margin: 0 0 0 auto;
 
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   color: #666;
 }
 

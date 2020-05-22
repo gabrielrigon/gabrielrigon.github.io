@@ -14,10 +14,14 @@ export default {
     return {
       skills: [
         { name: "Ruby on Rails" },
-        { name: "Node.js" },
-        { name: "Swift (iOS)" },
+        { name: "Node" },
         { name: "React" },
-        { name: "Vue.js" }
+        { name: "React Native" },
+        { name: "VueJS" },
+        { name: "MongoDB" },
+        { name: "Elasticsearch" },
+        { name: "Docker" },
+        { name: "DevOps (AWS and Azure)" }
       ]
     };
   }
