@@ -13,15 +13,14 @@ export default {
   data: () => {
     return {
       skills: [
+        { name: "DevOps on AWS" },
+        { name: "Docker" },
         { name: "Ruby on Rails" },
         { name: "Node" },
         { name: "React" },
         { name: "React Native" },
         { name: "VueJS" },
         { name: "MongoDB" },
-        { name: "Elasticsearch" },
-        { name: "Docker" },
-        { name: "DevOps (AWS and Azure)" }
       ]
     };
   }
