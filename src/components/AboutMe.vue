@@ -27,8 +27,8 @@ export default {
 
 <style scoped>
 h1 {
-  background-color: #004680;
-  color: white;
+  background-color: #F5DF4D;
+  color: #666;
 }
 
 a.normal-text {

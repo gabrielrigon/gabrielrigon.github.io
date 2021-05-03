@@ -1,7 +1,7 @@
 <template>
   <div class="skills">
     <h2>Interests</h2>
-    <p>Software Architecture, DevOps, Mobile, Chatbots, Machine Learning, Blockchain</p>
+    <p>DevOps, Software Architecture, Mobile, Chatbots, Machine Learning</p>
   </div>
 </template>
 
