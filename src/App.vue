@@ -27,7 +27,7 @@ export default {
 
 <style>
 a {
-  color: #666;
+  color: #939597;
 }
 
 #app {
@@ -35,7 +35,7 @@ a {
   margin: 0 0 0 auto;
 
   font-family: "Source Code Pro", monospace;
-  color: #666;
+  color: #939597;
 }
 
 @media only screen and (max-width: 540px) {
