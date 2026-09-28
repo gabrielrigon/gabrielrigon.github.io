@@ -1,0 +1,24 @@
+# Gabriel Rigon
+
+> Gabriel Rigon is a Brazilian CTO and Head of Technology at Appolus Tecnologia, with sixteen years in technology leadership, software architecture, cloud infrastructure and AI adoption and governance. The platforms he runs serve more than 2 million people a month across public health and education in Brazil. He is also the founder of GBRLRG (GABRIEL RIGON TECNOLOGIA LTDA), an independent studio that makes the apps My Plan Buddy, Tablewit and Jambu, and the Mindminer courses on AI.
+
+He started as an intern in 2010 and went through junior developer, tech lead and eight years as software architect before leading technology. His work covers AI adoption programs for engineering teams (guardrails, training, usage measurement), agent platforms with built-in evaluation, natural-language analytics over education data, integrations with Brazil's national health data network (RNDS) and infrastructure on AWS. He is open to conversations about technology leadership, advisory and board-level questions, AI adoption and international projects.
+
+## Site
+
+- [Home](https://gabrielrigon.com.br/): who he is, track record, focus, approach, skills and contact
+- [Selected projects](https://gabrielrigon.com.br/projects): ten projects across public health, education, infrastructure and AI, described by the role he held
+
+## Company and products
+
+- [GBRLRG](https://gbrlrg.com.br/): his independent software company in Brazil (GABRIEL RIGON TECNOLOGIA LTDA), small apps for everyday things
+- [My Plan Buddy](https://myplanbuddy.app/): a gentle planner for iPhone, iPad and Apple Watch that shows what fits right now, in the time and energy you have
+- [Tablewit](https://tablewit.app/): cozy daily logic puzzles for iPhone, iPad and Apple Watch
+- [Jambu](https://jambu.me/): shared expense tracking that shows where the month will close and settles up with the people you split bills with
+- [Mindminer](https://mindminer.com.br/): AI and Claude Code courses in Portuguese, in short animated episodes
+
+## Contact
+
+- [Email](mailto:gabrielrigon@outlook.com): gabrielrigon@outlook.com
+- [LinkedIn](https://linkedin.com/in/gabrielrigon): professional profile
+- [GitHub](https://github.com/gabrielrigon): code
