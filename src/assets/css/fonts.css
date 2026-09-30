@@ -1,0 +1,3 @@
+/* As fontes são carregadas em public/index.html com preconnect.
+   Um @import aqui obrigaria o browser a baixar o CSS primeiro para só
+   então descobrir as fontes, serializando duas viagens de rede. */
