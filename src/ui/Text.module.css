@@ -1,0 +1,23 @@
+.text {
+  max-width: 75ch;
+  margin: 0 0 1rem;
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  line-height: 1.7;
+  letter-spacing: -0.006em;
+  color: var(--color-ink);
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.text strong {
+  font-weight: 600;
+}
+
+@media (min-width: 48rem) {
+  .text {
+    font-size: 1rem;
+  }
+}

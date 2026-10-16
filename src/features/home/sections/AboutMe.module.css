@@ -1,0 +1,18 @@
+/* Floated on wider screens so the copy wraps around it and closes the gap underneath. */
+.portrait {
+  display: block;
+  width: 132px;
+  height: auto;
+  margin: 0 0 1.25rem;
+  border: var(--hairline);
+  border-radius: var(--radius);
+}
+
+@media (min-width: 48rem) {
+  .portrait {
+    float: left;
+    width: 150px;
+    margin: 0.35rem 2rem 1rem 0;
+    shape-outside: margin-box;
+  }
+}

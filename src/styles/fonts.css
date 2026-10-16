@@ -1,0 +1,4 @@
+/* Self-hosted (Fontsource, OFL): no third-party request and no extra round trip to a font CSS. */
+@import '@fontsource-variable/instrument-sans';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';

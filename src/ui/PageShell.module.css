@@ -1,0 +1,43 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 5rem;
+}
+
+.main:focus {
+  outline: none;
+}
+
+@media (min-width: 48rem) {
+  .main {
+    gap: 4rem;
+    padding: 4.5rem 2rem 7rem;
+  }
+}
+
+/* Visible only on keyboard focus, so keyboard and screen reader users can jump to the content. */
+.skipLink {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  transform: translateY(-200%);
+
+  background: var(--color-accent);
+  color: var(--color-paper);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.skipLink:focus {
+  transform: none;
+}

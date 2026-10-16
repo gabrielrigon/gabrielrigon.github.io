@@ -1,0 +1,21 @@
+/*
+ * Swiss brutalism: the structural honesty of neo-brutalism (exposed grid, hard edges,
+ * flat surfaces, no gradients or blur) executed with the restraint of Swiss minimalism:
+ * one accent, hairline rules, no rotation.
+ */
+:root {
+  --color-bg: #f1f0ec; /* warm neutral canvas */
+  --color-paper: #fbfaf8; /* surface */
+  --color-ink: #141414; /* near-black, never pure #000 */
+  --color-muted: #6b6b65; /* secondary text, 4.9:1 on paper */
+  --color-line: #d8d6cf; /* hairline rules and borders */
+  --color-control: #8e8c84; /* interactive borders, 3:1 on paper (WCAG 1.4.11) */
+  --color-accent: #1e4a42; /* deep petrol, the single colour that carries meaning */
+
+  --font-display: 'Instrument Sans Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'SF Mono', Menlo, monospace;
+
+  --radius: 3px;
+  --hairline: 1px solid var(--color-line);
+}

@@ -1,0 +1,40 @@
+.list {
+  margin: 1.5rem 0 0;
+  border-top: var(--hairline);
+}
+
+.item {
+  padding: 1.25rem 0;
+  border-bottom: var(--hairline);
+}
+
+.name {
+  margin: 0 0 0.45rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+.body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  letter-spacing: -0.006em;
+  color: var(--color-ink);
+}
+
+@media (min-width: 48rem) {
+  .item {
+    display: grid;
+    grid-template-columns: 12rem minmax(0, 1fr);
+    gap: 0 2rem;
+  }
+
+  .name {
+    margin: 0;
+    font-size: 0.96rem;
+  }
+}
