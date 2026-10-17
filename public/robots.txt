@@ -12,6 +12,7 @@ User-agent: Claude-User
 User-agent: PerplexityBot
 User-agent: Perplexity-User
 User-agent: Google-Extended
+User-agent: Applebot-Extended
 User-agent: Bingbot
 Allow: /
 

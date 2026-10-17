@@ -1,6 +1,7 @@
 import { renderToString } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 
+import { absoluteUrl } from '../config/site'
 import App from './App'
 import { renderHead } from './head'
 import { ROUTES } from './routes'
@@ -34,5 +35,26 @@ describe.each(ROUTES)('$path', route => {
     expect(head).toContain('name="description"')
     expect(head.includes('rel="canonical"')).toBe(!route.noindex)
     expect(head.includes('noindex')).toBe(Boolean(route.noindex))
+  })
+})
+
+describe('structured data', () => {
+  const graphOf = route => {
+    const [, json] = renderHead(route).match(/<script type="application\/ld\+json">(.*)<\/script>/)
+    return JSON.parse(json)['@graph']
+  }
+
+  it('describes the home page as the profile of the person', () => {
+    const page = graphOf(ROUTES[0]).find(node => node['@type'] === 'ProfilePage')
+    expect(page.mainEntity['@id']).toMatch(/#person$/)
+  })
+
+  it('gives every indexable page its own node, and no @id twice', () => {
+    for (const route of ROUTES.filter(r => !r.noindex)) {
+      const graph = graphOf(route)
+      expect(graph[0]['@id']).toBe(`${absoluteUrl(route.path)}#webpage`)
+      const ids = graph.map(node => node['@id'])
+      expect(new Set(ids).size).toBe(ids.length)
+    }
   })
 })

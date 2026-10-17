@@ -7,6 +7,10 @@ export const SITE = {
   name: 'Gabriel Rigon',
   lang: 'en-US',
   ogLocale: 'en_US',
+  givenName: 'Gabriel',
+  familyName: 'Rigon',
+  /* Stable URL (public/, no hash) so search engines can keep one photo for the person. */
+  photo: { path: '/gabriel.jpg', width: 600, height: 800 },
   ogImage: {
     path: '/og-image.png',
     width: 1200,

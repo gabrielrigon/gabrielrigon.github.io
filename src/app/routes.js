@@ -14,6 +14,7 @@ export const ROUTES = [
     title: 'Gabriel Rigon · Technology & AI Leadership',
     description:
       'CTO and Head of Technology, sixteen years in technology leadership, software architecture and AI adoption and governance, serving over 2 million people a month.',
+    schemaType: 'ProfilePage',
     Page: HomePage,
   },
   {
@@ -22,6 +23,8 @@ export const ROUTES = [
     title: 'Selected projects · Gabriel Rigon',
     description:
       'Ten projects across public health, education, infrastructure and AI, described by the role held rather than the code written.',
+    schemaType: 'CollectionPage',
+    breadcrumb: 'Selected projects',
     Page: ProjectsPage,
   },
   {

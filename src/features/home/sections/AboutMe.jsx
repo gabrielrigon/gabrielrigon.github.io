@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 
 import portrait300 from '../../../assets/img/gabriel-300.webp'
 import portrait600 from '../../../assets/img/gabriel-600.webp'
-import portraitFallback from '../../../assets/img/gabriel-600.jpg'
+import { SITE } from '../../../config/site'
 import { EMPLOYER, VENTURES } from '../../../content/profile'
 import { listSeparator } from '../../../lib/format'
 import { Section, Text, TextLink } from '../../../ui'
@@ -21,10 +21,10 @@ export default function AboutMe() {
         />
         <img
           className={styles.portrait}
-          src={portraitFallback}
+          src={SITE.photo.path}
           alt="Portrait of Gabriel Rigon"
-          width="600"
-          height="800"
+          width={SITE.photo.width}
+          height={SITE.photo.height}
           loading="lazy"
           decoding="async"
         />

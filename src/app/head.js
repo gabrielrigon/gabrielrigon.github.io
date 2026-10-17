@@ -1,9 +1,19 @@
 import { SITE, absoluteUrl } from '../config/site'
 import { CONTENT_SECURITY_POLICY } from '../config/security'
-import { STRUCTURED_DATA } from '../config/structuredData'
+import { structuredData } from '../config/structuredData'
 import { escapeHtml, serializeJsonForScript } from '../lib/html'
 
 const meta = (attr, key, content) => `<meta ${attr}="${key}" content="${escapeHtml(content)}" />`
+
+/* The profile page is an Open Graph "profile" with the person's names; the others are "website". */
+const openGraphType = route =>
+  route.schemaType === 'ProfilePage'
+    ? [
+        meta('property', 'og:type', 'profile'),
+        meta('property', 'profile:first_name', SITE.givenName),
+        meta('property', 'profile:last_name', SITE.familyName),
+      ]
+    : [meta('property', 'og:type', 'website')]
 
 /** The per-route <head> tags, as an HTML string for the prerender. */
 export function renderHead(route) {
@@ -23,7 +33,7 @@ export function renderHead(route) {
   return [
     ...tags,
     `<link rel="canonical" href="${escapeHtml(url)}" />`,
-    meta('property', 'og:type', 'profile'),
+    ...openGraphType(route),
     meta('property', 'og:locale', SITE.ogLocale),
     meta('property', 'og:site_name', SITE.name),
     meta('property', 'og:title', route.title),
@@ -37,7 +47,7 @@ export function renderHead(route) {
     meta('name', 'twitter:title', route.title),
     meta('name', 'twitter:description', route.description),
     meta('name', 'twitter:image', image),
-    `<script type="application/ld+json">${serializeJsonForScript(STRUCTURED_DATA)}</script>`,
+    `<script type="application/ld+json">${serializeJsonForScript(structuredData(route))}</script>`,
   ]
     .filter(Boolean)
     .join('\n')
